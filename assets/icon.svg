@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hourglass frame -->
+  <rect x="90" y="0" width="332" height="60" fill="#567C82"/>
+  <rect x="90" y="452" width="332" height="60" fill="#567C82"/>
+  
+  <!-- Glass container -->
+  <rect x="128" y="60" width="256" height="90" fill="#E8E8E8"/>
+  <rect x="128" y="362" width="256" height="90" fill="#E8E8E8"/>
+  
+  <!-- Sand in top -->
+  <polygon points="128,60 384,60 384,120 256,180 128,120" fill="#FFA500"/>
+  
+  <!-- Sand in bottom -->
+  <ellipse cx="256" cy="420" rx="80" ry="32" fill="#FF8C00"/>
+  
+  <!-- Narrow middle -->
+  <polygon points="240,150 272,150 272,180 256,190 240,180" fill="#FFA500"/>
+  <polygon points="240,332 272,332 272,362 256,352 240,362" fill="#FF8C00"/>
+  
+  <!-- Sand stream -->
+  <rect x="250" y="180" width="12" height="172" fill="#FF8C00"/>
+  
+  <!-- Side elements (green) -->
+  <path d="M0,120 Q64,120 64,256 Q64,392 0,392 Z" fill="#8BC34A"/>
+  <path d="M512,120 Q448,120 448,256 Q448,392 512,392 Z" fill="#8BC34A"/>
+  
+  <!-- Side rectangles -->
+  <rect x="120" y="240" width="30" height="32" fill="#689F38"/>
+  <rect x="362" y="240" width="30" height="32" fill="#689F38"/>
+</svg>

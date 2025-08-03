@@ -1,0 +1,17 @@
+{
+  "name": "electronapp",
+  "version": "1.0.0",
+  "description": "My Awesome Electron Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["electron", "desktop", "app"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^37.2.4"
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron Dashboard Login Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="login-view" class="login-container">
+    <div class="login-panel">
+        <h2>Welcome</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required autofocus>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="btn btn-login">Login</button>
+        </form>
+    </div>
+</div>
+<div id="dashboard-view" style="display:none">
+    <div class="window-bar window-bar-windows">
+        <span class="window-btn win-min" id="win-min" title="Minimize"></span>
+        <span class="window-btn win-max" id="win-max" title="Maximize"></span>
+        <span class="window-btn win-close" id="win-close" title="Close"></span>
+    </div>
+    <div class="dashboard-container">
+        <aside id="sidebar" class="sidebar">
+            <button id="sidebar-toggle" class="sidebar-toggle">&#9776;</button>
+            <div class="sidebar-header">
+                <img src="assets/icon.svg" class="logo-icon" style="width:32px;height:32px;border-radius:8px;">
+                <span class="sidebar-title">Invo.</span>
+            </div>
+            <nav class="sidebar-menu minimalist">
+                <a href="#" class="active">Overview</a>
+                <a href="#">Reports</a>
+                <a href="#">Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="logout-btn" class="btn btn-logout">Log Out</button>
+            </div>
+        </aside>
+        <main class="main-content minimalist">
+            <header class="main-header minimalist">
+                <div class="main-profile minimalist">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" class="profile-icon" alt="Profile">
+                </div>
+            </header>
+            <section class="dashboard-section">
+                <div class="report-tiles minimalist">
+                    <div class="report-tile">
+                        <span class="report-title">Revenue</span>
+                        <span class="report-value">$18,540</span>
+                    </div>
+                    <div class="report-tile">
+                        <span class="report-title">Invoices</span>
+                        <span class="report-value">214</span>
+                    </div>
+                    <div class="report-tile">
+                        <span class="report-title">Clients</span>
+                        <span class="report-value">89</span>
+                    </div>
+                </div>
+                <div class="dashboard-welcome minimalist">
+                    <h1>Welcome!</h1>
+                    <p>This minimalist dashboard shows a Windows-style header, quick demo metrics, sidebar toggle, and clean UI.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+<script src="renderer.js"></script>
+</body>
+</html>
